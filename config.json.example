@@ -1,0 +1,27 @@
+{
+	"token":"",
+	"rateLimit":{
+		"time":3,
+		"maxMessages":5
+	},
+	"commands":[
+		{
+			"command":"translate_to_en",
+			"destLang":"en"
+		},
+		{
+			"command":"translate_to_zh",
+			"destLang":"zh-CN"
+		},
+		{
+			"command":"translate_to_ja",
+			"destLang":"ja"
+		}
+	],
+	"helpInfo":[
+		"Please use the reply method to use the bot.",
+		"/translate_to_en - Translate message to english.",
+		"/translate_to_zh - Translate message to chinese.",
+		"/translate_to_ja - Translate message to japanese."
+	]
+}
