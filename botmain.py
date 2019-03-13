@@ -4,6 +4,7 @@ from random import randint
 import time
 import json
 import re
+import unicodedata
 import logging
 
 logging.basicConfig(level=logging.DEBUG,format="[%(asctime)s][%(levelname)s][%(thread)d][%(filename)s:%(lineno)d]%(message)s")
@@ -46,6 +47,9 @@ def checkRateLimit():
 		logging.exception("")
 		return True
 
+def removeEmojis(text):
+	return ''.join(c for c in unicodedata.normalize('NFC', text) if c <= '\uFFFF')
+
 def translate(text="",dest="en"):
 	trans = Translator()
 	return trans.translate(text,dest).text
@@ -71,7 +75,7 @@ def translateReply(bot,update):
 		chatId = update.message.chat_id
 		replyToMessageId = update.message.message_id
 		try:
-			translateText = update.message.reply_to_message.text
+			translateText = removeEmojis(update.message.reply_to_message.text)
 		except:
 			bot.send_message(chat_id=chatId,reply_to_message_id=replyToMessageId,text="You need reply a message!")
 			return
