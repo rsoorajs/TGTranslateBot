@@ -1,0 +1,17 @@
+This bot is awsome.but now its creating errors.when i tried to translate it showing
+
+`Bot internal error,please contact administrators.'
+
+then sentence i tried to translate
+
+`My name is Angélica Summer, I am 12 years old and I am Canadian. 5 years ago my family and I moved to the south of France. My father, Frank Summer, is a mechanic; he loves vintage cars and collects miniature cars.
+
+My mother's name is Emilie Summer; she is a nurse in a hospital not far from our house. We moved to France, because she has always loved the culture of this country.
+
+Life in France is very different from that in Canada. It is always hot here. Every Sunday we go to the beautiful Biarritz beach and buy ice cream after swimming in the sea.
+
+The French are very friendly and welcoming. We speak French when we are outside, at school or at the market. However, we still speak English at home as my parents don't want me to lose my native language.`
+
+
+
+i didnt saw any specific errors in logs...can you please fix it..and open an issue tab for bug reporting.kindly close this pull request after you read.thank you
